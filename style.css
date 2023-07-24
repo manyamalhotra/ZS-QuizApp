@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+  } 
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    text-align: center;
+  } 
+  
+  form {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"] {
+    padding: 10px;
+    width: -webkit-fill-available;  
+    border-radius: 5px; 
+    margin-bottom: 20px;
+  } 
+
+  input[type="radio"] {
+    margin-bottom: 20px;
+  } 
+
+  button {
+    padding: 10px 20px;  
+    background-color: #007bff;
+    color: #fff;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    opacity: 0.6; /* Example: Reducing opacity to give a visually disabled appearance */
+    cursor: not-allowed;
+    background-color: gray;
+  }
+  
+  #quiz-questions {
+      text-align: center;
+  }
+
+  .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {  
+    background-color: #2980B9;  
+  }

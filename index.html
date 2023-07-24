@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Quiz App</h1>
+            <form id="registration-form">
+                
+                <input type="text" id="user-name" placeholder="UserName" required>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <div id="categorys">Select Category:</div><br/>
+
+                <input type="radio" id="film" name="category" value="11" required>
+                <label for="film">Entertainment: Film</label><br>
+
+                <input type="radio" id="book" name="category" value="10">
+                <label for="book">Entertainment: Books</label><br>
+
+                <input type="radio" id="art" name="category" value="25">
+                <label for="art">Art</label><br>
+
+                <input type="radio" id="geo" name="category" value="22">
+                <label for="geo">Geography</label><br>
+
+                <input type="number" id="number-question" placeholder="Select number of questions" min="5" max="20" required>
+                <br>
+
+                <div id="levels">Select Difficulty Level:</div><br/>
+                <input type="radio" id="easy" name="level" value="easy" required>
+                <label for="easy">Easy</label><br>
+
+                <input type="radio" id="medium" name="level" value="medium">
+                <label for="medium">Medium</label><br>
+
+                <input type="radio" id="hard" name="level" value="hard">
+                <label for="hard">Hard</label><br>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        <div id="quiz_container">
+                <div id = "quiz_category"></div>
+
+                <div id="quiz_header" style="display:flex">
+                    <!--<div id="quiz_score" style="flex: 1"></div>
+                    <div id="quiz_qno" style="flex: 1"></div>-->
+                    <div id="quiz_timer" style="flex: 1"></div>
+                </div>
+
+                <div id="quiz_question"></div>
+
+                <div id="quiz_options"></div>
+
+                <div id="quiz_ans_submit">
+                </div>
+
+                <div id="quiz_feedback"></div>
+                
+                <div id="quiz_next_quest">
+                </div>
+            
+            <div id="error-block"></div>
+        </div>
+
+        <div id="summary_container" style="display: none">
+            <div id="summary_category"></div>
+            <div id="summary_feedback"></div>
+
+            <a href="index.html"> <button id="'home">Attempt Another Quiz</button> </a>
+        </div>
+    </body>
+</html>
+
+<script src="script.js"></script>
